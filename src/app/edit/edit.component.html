@@ -1,0 +1,59 @@
+<div class="topBox">
+    <div class="container-fluid">
+        <form class="cf" [formGroup]="Editform">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="input-name-left">Category:</label>
+                    <select id="input-name-left" formControlName="category">
+                       
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                    </select>
+                </div>
+    
+                <div class="col-md-4">
+                    <label for="input-email-left">Product Name</label>
+                    <input type="email" id="input-email-left" formControlName="name" placeholder="Enter product name">
+                </div>
+                <div class="col-md-4">
+                    <label for="input-subject-left">Unit:</label>
+                    <select id="input-subject-left" formControlName="unit">
+                        <option value="metre">metre</option>
+                        <option value="kilogram">kilogram</option>
+                        <option value="kelvin">kelvin</option>
+                        <option value="mole">mole</option>
+                        <option value="candela">candela</option>
+                        <option value="Tonne">Tonne</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="input-name-right">GST</label>
+                    <select id="input-name-left" formControlName="gst">
+                        <option value="IGST">IGST</option>
+                        <option value="SGST">SGST</option>
+                        <option value="CGST">CGST</option>
+                        <option value="UTGST">UTGST</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="input-email-right">HSN</label>
+                    <input type="email" id="input-email-right" formControlName="hsn" placeholder="Enter HSN">
+                </div>
+                <div class="col-md-4">
+                    <label for="input-subject-right">Description</label>
+                    <input type="text" id="input-subject-right" formControlName="Description"
+                        placeholder="Enter the Description">
+                    
+                </div>
+                <div class="col-md-12 text-end">
+                    <button (click)="submit()" type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            
+    
+    
+    
+    </form>
+    </div>
+</div>

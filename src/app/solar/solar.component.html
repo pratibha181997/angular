@@ -1,0 +1,34 @@
+
+
+<div *ngIf="formDataArray && formDataArray.length > 0">
+    <table class="table-fill" >
+     <thead>
+       <tr>
+         <th class="text-left">Sr. No</th>
+         <th class="text-left">Category</th>
+         <th class="text-left">Name</th>
+         <th class="text-left">Description</th>
+         <th class="text-left">HSN</th>
+         <th class="text-left">GST</th>
+         <th class="text-left">Unit</th>
+       </tr>
+     </thead>
+     <tbody class="table-hover">
+       <tr *ngFor="let innerArray of formDataArray; let i = index">
+         <ng-container *ngFor="let formData of innerArray">
+           <td class="text-left">{{ i + 1 }}</td>
+           <td class="text-left">{{ formData.category }}</td>
+           <td class="text-left">{{ formData.name }}</td>
+           <td class="text-left">{{ formData.Description }}</td>
+           <td class="text-left">{{ formData.hsn }}</td>
+           <td class="text-left">{{ formData.gst }}</td>
+           <td class="text-left">{{ formData.unit }}</td>
+         </ng-container>
+       </tr>
+     </tbody>
+   </table>
+   
+   </div>
+   <div *ngIf="!formDataArray || formDataArray.length === 0" style="text-align: center; margin-top: 9px; font-size: 25px;">
+     <p><b>No data available for Solar component.</b></p>
+   </div>

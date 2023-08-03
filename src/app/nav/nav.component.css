@@ -1,0 +1,12 @@
+
+.fill-remaining-space {
+    flex: 1 1 auto;
+  }
+  
+
+  .sidenav button.active,
+  .sidenav button:hover{
+    background-color: #fff;
+    border-color:#fff;
+    color: #3f51b5;
+  }
